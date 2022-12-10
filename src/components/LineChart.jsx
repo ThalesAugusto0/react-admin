@@ -1,14 +1,14 @@
-import { ResponsiveLine } from "@nivo/line";
+import { LineChart } from "@tremor/react";
 import { useTheme } from "@mui/material";
 import { tokens } from "../theme";
 import { mockLineData as data } from "../data/mockData";
 
-const LineChart = ({ isCustomLineColors = false, isDashboard = false }) => {
+const LineCharts = ({ isCustomLineColors = false, isDashboard = false }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
   return (
-    <ResponsiveLine
+    <LineChart
       data={data}
       theme={{
         axis: {
@@ -114,4 +114,4 @@ const LineChart = ({ isCustomLineColors = false, isDashboard = false }) => {
   );
 };
 
-export default LineChart;
+export default LineCharts;

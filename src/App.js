@@ -15,6 +15,7 @@ import Geography from "./scenes/geography";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "./theme";
 import Calendar from "./scenes/calendar/calendar";
+import '@tremor/react/dist/esm/tremor.css';
 
 function App() {
   const [theme, colorMode] = useMode();
